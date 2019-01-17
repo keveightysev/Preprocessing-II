@@ -187,6 +187,9 @@ img {
   padding-right: 30px;
   font-size: 1.3rem;
 }
+.header .nav a:hover {
+  color: #17A2B8;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -243,4 +246,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .top {
+  border-bottom: 1px dashed lightgrey;
+}
+.home .top .jumbo {
+  width: 100%;
+  height: 300px;
+  background-image: url('/img/fun-bus.jpg');
+  background-position: cover;
+  margin-bottom: 20px;
 }
