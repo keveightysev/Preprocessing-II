@@ -965,19 +965,19 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .btn {
-  background-color: #008081;
+  background-color: #17A2B8;
   color: #FFFFFF;
   font-size: 1.8rem;
   text-align: center;
   width: 85%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #008081;
+  border: 1px solid #17A2B8;
   cursor: pointer;
 }
 .home .content-pick .btn:hover {
   background-color: #FFFFFF;
-  color: #008081;
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   .home .content-pick {
