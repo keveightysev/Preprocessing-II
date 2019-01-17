@@ -190,6 +190,19 @@ img {
 .header .nav a:hover {
   color: #17A2B8;
 }
+@media (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .header .nav a {
+    padding: 0 20px;
+  }
+  .header h1 {
+    padding-bottom: 10px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -218,6 +231,21 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    order: 1;
+  }
+  .home .content-section .img-content:last-child {
+    order: 2;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -237,6 +265,11 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -247,17 +280,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .top {
-  border-bottom: 2px dashed #C0C0C0;
-}
-.home .top .jumbo {
-  width: 100%;
-  height: 300px;
-  background-image: url('/img/fun-bus.jpg');
-  background-position: cover;
-  margin-bottom: 20px;
-}
-.home .btn {
+.home .content-pick .btn {
   background-color: #008081;
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -265,10 +288,44 @@ img {
   width: 85%;
   padding: 10px;
   border-radius: 10px;
+  border: 1px solid #008081;
   cursor: pointer;
 }
-.home .btn:hover {
+.home .content-pick .btn:hover {
   background-color: #FFFFFF;
   color: #008081;
-  border: 1px solid #008081;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
+.home .top {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .top .jumbo {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 0 auto 20px;
+  background-image: url('/img/fun-bus.jpg');
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 500px) {
+  .home .top .jumbo {
+    height: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
 }
