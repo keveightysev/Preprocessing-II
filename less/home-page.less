@@ -14,9 +14,13 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      overflow: hidden;
+      border-radius: 10px;
       img {
-        border-radius: 10px;
+        .zoom(left);
+        &:last-child {
+          .zoom(right);
+        }
       }
     }
 
@@ -53,10 +57,14 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
-    img {
+    .destination-img{
       border-radius: 10px;
+      overflow: hidden;
+      img {
+        .zoom(bottom-left);
+      }
     }
+
 
     @media @mobile {
       width: 100%;
@@ -104,19 +112,17 @@
     .jumbo {
       width: 100%;
       max-width: 800px;
-      height: 300px;
       margin: 0 auto 20px;
-      background-image: url('/img/fun-bus.jpg');
-      background-size: cover;
-      background-position: center;
+      overflow: hidden;
+      img {
+        .zoom(top);
+      }
       @media @mobile {
-        height: 150px;
+        // height: 150px;
       }
     }
-
     border-bottom: 2px dashed @navigation-border;
   }
-
 
   @media @mobile {
     width: 90%;
