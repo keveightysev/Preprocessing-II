@@ -169,7 +169,7 @@ img {
   margin: 0 auto;
 }
 .border {
-  border-bottom: 1px dashed lightgrey;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .header {
   display: flex;
@@ -248,7 +248,7 @@ img {
   margin-bottom: 30px;
 }
 .home .top {
-  border-bottom: 1px dashed lightgrey;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .top .jumbo {
   width: 100%;
@@ -256,4 +256,19 @@ img {
   background-image: url('/img/fun-bus.jpg');
   background-position: cover;
   margin-bottom: 20px;
+}
+.home .btn {
+  background-color: #008081;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 85%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.home .btn:hover {
+  background-color: #FFFFFF;
+  color: #008081;
+  border: 1px solid #008081;
 }
